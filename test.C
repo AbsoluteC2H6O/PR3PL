@@ -15,16 +15,16 @@ using namespace Designar;
 
 # include <helpers.H>
 
-# include <expnode.H>
+# include <expnode-sol.H>
 
 int main()
 {
-  Enviroment env;
+ Enviroment env;
   
   Int * n = new Int(10);
   assert(n->value == 10);
   delete n;
-
+ 
   Add * add = new Add(new Int(4), new Int(5));
   Int * add_result = static_cast<Int *>(add->eval(env));
 
@@ -97,6 +97,7 @@ int main()
   delete result;
   
   cout << "Everything ok!\n";
+
   
   return 0;
 }

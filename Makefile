@@ -2,7 +2,7 @@
 CXX = clang++ -std=c++14
 
 # Adapta esta ruta a tu instalación de DeSIGNAR
-DSG = ~/DeSIGNAR
+DSG = /home/cg/DeSiGNAR
 
 # De aquí en adelante, es preferible que no toques estas variables
 WARN = -Wall -Wextra -Wcast-align -Wno-sign-compare -Wno-write-strings \
